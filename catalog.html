@@ -87,7 +87,56 @@
 			</ul>
 			<h1 class="perf-title">ПЕРФОРАТОРЫ</h1>
 			<section class="catalog">
-			<form class="filters"></form>
+			<form class="filters" >
+				<span class="filter">Фильтр:</span>
+						<div class="by-price">
+							<h2>Цена:</h2>
+                                <input type="range" min="0" max="30000" step="100" value="5000">
+							<div class="price-controls">
+								<input class="price-min" type="text" name="price-min" value="0"><span>—</span>
+								<input class="price-max" type="text" name="price-max" value="30000">
+							</div>
+						</div>
+						<hr class="line">
+						<div class="by-firm">
+							<h3>Производители:</h3>
+							<ul class="list-firm">
+								<li>
+									<input type="checkbox" name="firm1" id="ch1" value="Bosch" checked="">
+									<label for="ch1">Bosch</label>
+								</li>
+								<li>
+									<input type="checkbox" name="firm2" id="ch2" value="Интерскол">
+									<label for="ch2">Интерскол</label> 
+								</li>
+								<li>
+									<input type="checkbox" name="firm3" id="ch3" value="Makita" checked="">
+									<label for="ch3">Makita</label>
+								</li>
+								<li>
+									<input type="checkbox" name="firm4" id="ch4" value="Dewalt">
+									<label for="ch4">Dewalt</label>
+								</li>
+								<li>
+									<input type="checkbox" name="firm5" id="ch5" value="Hitachi">
+									<label for="ch5">Hitachi</label>
+								</li>
+							</ul>
+						</div>
+						<hr class="line">
+						<div class="by-supply">
+							<h3>Питание:</h3>
+							<ul class="list-supply">
+								<li>
+									<input type="radio" name="supply" id="rd1" value="accumulator" checked="">
+									<label for="rd1">Аккумуляторные</label>
+									<input type="radio" name="supply" id="rd2" value="lan">
+									<label for="rd2">Сетевые</label>
+								</li>
+							</ul>
+						</div>
+						<button type="submit" class="btn-show">Показать</button>
+					</form>
 			<div class="sorting">
 				<span>Сортировка</span>
 				<ul>
